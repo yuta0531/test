@@ -13,11 +13,12 @@ use App\Http\Controllers\PostController;
 |
 */
 
-//Route::get('/', function () { return view('welcome'); });
-/*
-Route::get('/' ,function(){
+//Route::get('/', function () { return view('welcome'); }); //初期からあるヤツ
+
+
+Route::get('/',[PostController::class, 'index']);   
+
+/*Route::get('/' ,function(){       //カリキュラム8-2
     return view('posts/index');
 });
 */
-
-Route::get('/posts',[PostController::class, 'index']);
