@@ -17,8 +17,4 @@ use App\Http\Controllers\PostController;
 
 
 Route::get('/',[PostController::class, 'index']);   
-
-/*Route::get('/' ,function(){       //カリキュラム8-2
-    return view('posts/index');
-});
-*/
+Route::get('/posts/{post}',[PostController::class, 'show']);
