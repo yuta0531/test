@@ -20,8 +20,7 @@
            </div>
            <div class="body">
                <h2>Body</h2>
-               <input type="text" name="post[title]" value="{{$post->body}}">
-<!--               <textarea name="post[body]" value="{$post->body}}"></textarea>  -->
+               <textarea name="post[body]" >{{$post->body}}</textarea>  
            </div>
            <input type="submit" value="update">
        </form>
